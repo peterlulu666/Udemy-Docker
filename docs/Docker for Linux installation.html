@@ -88,7 +88,7 @@
     <link rel="next" href="Docker start.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="Docker Cheat Sheet.html" />
     
 
     </head>
@@ -130,7 +130,20 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="Docker for Linux installation.html">
+        <li class="chapter " data-level="1.2" data-path="Docker Cheat Sheet.html">
+            
+                <a href="Docker Cheat Sheet.html">
+            
+                    
+                    Docker Cheat Sheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="Docker for Linux installation.html">
             
                 <a href="Docker for Linux installation.html">
             
@@ -143,7 +156,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="Docker start.html">
+        <li class="chapter " data-level="1.4" data-path="Docker start.html">
             
                 <a href="Docker start.html">
             
@@ -154,15 +167,14 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.3.1" data-path="Application Runtime.md">
+        <li class="chapter " data-level="1.5" data-path="Docker map a port on running container.html">
             
-                <span>
+                <a href="Docker map a port on running container.html">
             
                     
-                    Application Runtime
+                    Docker map a port on running container
             
                 </a>
             
@@ -170,12 +182,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="Java concept.md">
+        <li class="chapter " data-level="1.6" data-path="Docker container status.html">
             
-                <span>
+                <a href="Docker container status.html">
             
                     
-                    Java concept
+                    Docker container status
             
                 </a>
             
@@ -183,8 +195,29 @@
             
         </li>
     
+        <li class="chapter " data-level="1.7" data-path="Docker container shell.html">
+            
+                <a href="Docker container shell.html">
+            
+                    
+                    Docker container shell
+            
+                </a>
+            
 
-            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Docker container port.html">
+            
+                <a href="Docker container port.html">
+            
+                    
+                    Docker container port
+            
+                </a>
+            
+
             
         </li>
     
@@ -270,13 +303,45 @@ sudo systemctl start docker
 sudo systemctl status docker
 </code></pre><p><br></p>
 <h2 id="shell-file">Shell file</h2>
+<p>Docker-ce</p>
 <p>This is the <a href="https://get.docker.com/" target="_blank">shell file</a> link.</p>
-<p><br></p>
+<pre class="language-"><code>curl -fsSL https://get.docker.com -o get-docker.sh
+
+sh get-docker.sh
+</code></pre><p><br></p>
+<h2 id="installing-docker-machine">Installing docker machine</h2>
+<p>Docker documetation<sup><a href="#fn_3" id="reffn_3">3</a></sup></p>
+<pre class="language-"><code>base=https://github.com/docker/machine/releases/download/v0.16.0 &amp;&amp; curl -L $base/docker-machine-$(uname -s)-$(uname -m) &gt;/tmp/docker-machine &amp;&amp; sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &amp;&amp; chmod +x /usr/local/bin/docker-machine
+</code></pre><p>Github<sup><a href="#fn_4" id="reffn_4">4</a></sup></p>
+<pre class="language-"><code>curl -L https://github.com/docker/machine/releases/download/v0.16.2/docker-machine-`uname -s`-`uname -m` &gt;/tmp/docker-machine &amp;&amp; chmod +x /tmp/docker-machine &amp;&amp; sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+</code></pre><p><br></p>
+<h2 id="installing-docker-compose">Installing docker compose</h2>
+<p>Docker documetation<sup><a href="#fn_5" id="reffn_5">5</a></sup></p>
+<pre class="language-"><code>sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+</code></pre><p>Github<sup><a href="#fn_6" id="reffn_6">6</a></sup></p>
+<pre class="language-"><code>curl -L https://github.com/docker/compose/releases/download/1.25.0-rc2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+</code></pre><p><br></p>
 <blockquote id="fn_1">
 <sup>1</sup>. <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank">https://docs.docker.com/install/linux/docker-ce/ubuntu/</a><a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
 </blockquote>
 <blockquote id="fn_2">
 <sup>2</sup>. <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7" target="_blank">https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7</a><a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_3">
+<sup>3</sup>. <a href="https://docs.docker.com/machine/install-machine/" target="_blank">https://docs.docker.com/machine/install-machine/</a><a href="#reffn_3" title="Jump back to footnote [3] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_5">
+<sup>5</sup>. <a href="https://github.com/docker/machine/releases" target="_blank">https://github.com/docker/machine/releases</a><a href="#reffn_5" title="Jump back to footnote [5] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_5">
+<sup>5</sup>. <a href="https://docs.docker.com/compose/install/#alternative-install-options" target="_blank">https://docs.docker.com/compose/install/#alternative-install-options</a><a href="#reffn_5" title="Jump back to footnote [5] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_6">
+<sup>6</sup>. <a href="https://github.com/docker/compose/releases" target="_blank">https://github.com/docker/compose/releases</a><a href="#reffn_6" title="Jump back to footnote [6] in the text."> &#x21A9;</a>
 </blockquote>
 </body></html>
                                 
@@ -305,7 +370,7 @@ sudo systemctl status docker
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="Docker Cheat Sheet.html" class="navigation navigation-prev " aria-label="Previous page: Docker Cheat Sheet">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -321,7 +386,7 @@ sudo systemctl status docker
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker for Linux installation","level":"1.2","depth":1,"next":{"title":"Docker start","level":"1.3","depth":1,"path":"Docker start.md","ref":"Docker start.md","articles":[{"title":"Application Runtime","level":"1.3.1","depth":2,"path":"Application Runtime.md","ref":"Application Runtime.md","articles":[]},{"title":"Java concept","level":"1.3.2","depth":2,"path":"Java concept.md","ref":"Java concept.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","splitter","prism","-highlight","back-to-top-button","page-toc-button","-lunr","-search","search-plus","copy-code-button","alerts","lightbox","katex","mathjax-full"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"shell":"bash"}},"mathjax-full":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true},"page-toc-button":{},"back-to-top-button":{},"alerts":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Docker for Linux installation.md","mtime":"2019-10-03T19:27:47.573Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T19:46:25.297Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker for Linux installation","level":"1.3","depth":1,"next":{"title":"Docker start","level":"1.4","depth":1,"path":"Docker start.md","ref":"Docker start.md","articles":[]},"previous":{"title":"Docker Cheat Sheet","level":"1.2","depth":1,"path":"Docker Cheat Sheet.md","ref":"Docker Cheat Sheet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","splitter","prism","-highlight","back-to-top-button","page-toc-button","-lunr","-search","search-plus","copy-code-button","alerts","lightbox","katex","mathjax-full","embed-pdf"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"shell":"bash"}},"mathjax-full":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true},"page-toc-button":{},"back-to-top-button":{},"alerts":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{},"expandable-chapters":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Docker for Linux installation.md","mtime":"2019-10-03T20:12:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T22:37:43.720Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
