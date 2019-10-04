@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Docker container port · GitBook</title>
+        <title>Docker push · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -85,10 +85,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Docker push.html" />
     
-    
-    <link rel="prev" href="Docker container shell.html" />
+    <link rel="prev" href="Docker container port.html" />
     
 
     </head>
@@ -221,7 +219,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="Docker container port.html">
+        <li class="chapter " data-level="1.9" data-path="Docker container port.html">
             
                 <a href="Docker container port.html">
             
@@ -234,7 +232,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="Docker push.html">
+        <li class="chapter active" data-level="1.10" data-path="Docker push.html">
             
                 <a href="Docker push.html">
             
@@ -277,7 +275,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Docker container port</a>
+        <a href="." >Docker push</a>
     </h1>
 </div>
 
@@ -292,10 +290,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <html><head></head><body><h1 id="docker-container-port">Docker container port</h1>
-<p><code>-p (--publish)</code>      </p>
-<p>publishing ports is in <code>HOST:CONTAINER</code> format.        </p>
-<p><code>docker container port {containerID}</code>        </p>
+                                <html><head></head><body><h1 id="docker-push">Docker push</h1>
+<p><code>docker login</code></p>
+<p>create a tag</p>
+<p><code>docker tag bretfisher/ubuntu:tagName bretfisher/ubuntu:tagName</code></p>
+<p><code>docker push bretfisher/ubuntu:tagName</code></p>
+<p>authentication key</p>
+<p><code>cat .docker/config.json</code></p>
 </body></html>
                                 
                                 </section>
@@ -323,14 +324,10 @@
 
             
                 
-                <a href="Docker container shell.html" class="navigation navigation-prev " aria-label="Previous page: Docker container shell">
+                <a href="Docker container port.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Docker container port">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="Docker push.html" class="navigation navigation-next " aria-label="Next page: Docker push">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -339,7 +336,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker container port","level":"1.9","depth":1,"next":{"title":"Docker push","level":"1.10","depth":1,"path":"Docker push.md","ref":"Docker push.md","articles":[]},"previous":{"title":"Docker container shell","level":"1.8","depth":1,"path":"Docker container shell.md","ref":"Docker container shell.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","splitter","prism","-highlight","back-to-top-button","page-toc-button","-lunr","-search","search-plus","copy-code-button","alerts","lightbox","katex","mathjax-full","embed-pdf"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"shell":"bash"}},"mathjax-full":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true},"page-toc-button":{},"back-to-top-button":{},"alerts":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{},"expandable-chapters":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Docker container port.md","mtime":"2019-10-03T22:28:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-04T13:33:47.547Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker push","level":"1.10","depth":1,"previous":{"title":"Docker container port","level":"1.9","depth":1,"path":"Docker container port.md","ref":"Docker container port.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","splitter","prism","-highlight","back-to-top-button","page-toc-button","-lunr","-search","search-plus","copy-code-button","alerts","lightbox","katex","mathjax-full","embed-pdf"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"shell":"bash"}},"mathjax-full":{},"splitter":{},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true},"page-toc-button":{},"back-to-top-button":{},"alerts":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{},"expandable-chapters":{},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Docker push.md","mtime":"2019-10-04T13:32:05.294Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-04T13:33:47.547Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
